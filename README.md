@@ -1,4 +1,4 @@
-# Ex-01_DS_Data_Cleansing
+# Ex-01_DS_Data_Cleaning
 
 
 ## AIM
