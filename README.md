@@ -115,6 +115,26 @@ sns.boxplot(x='sepal_width',data=delid)
 ```
 ![image](https://github.com/user-attachments/assets/d4107477-d920-497f-b199-28c17f15694c)
 
+# z-score
+```
+import pandas as pd
+import scipy.stats as stats
+import numpy as np
+hp=pd.read_csv("/content/heights.csv")
+hp
+```
+![image](https://github.com/user-attachments/assets/5a7a1872-8ae2-46ba-b462-701718474fe3)
+```
+z=np.abs(stats.zscore(hp["height"]))
+z
+```
+![image](https://github.com/user-attachments/assets/203ab38b-e07a-4c9f-9039-b43268238c81)
+
+```
+hp1=hp[z<3]
+hp1
+```
+![image](https://github.com/user-attachments/assets/dda80ae9-7c99-4754-85b7-114d80ca960d)
 
 
 
