@@ -167,7 +167,7 @@ df1
 ![image](https://github.com/user-attachments/assets/03523138-fe73-4062-8b92-ceb873b04732)
 
 # RESULT
-hence the data was cleaned and the outliers are detected.
+Hence the data was cleaned and the outliers are detected.
 
 
 
