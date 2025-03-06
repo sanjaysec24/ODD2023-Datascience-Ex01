@@ -135,7 +135,32 @@ hp1=hp[z<3]
 hp1
 ```
 ![image](https://github.com/user-attachments/assets/dda80ae9-7c99-4754-85b7-114d80ca960d)
+```
+df = pd.read_csv("heights.csv")
+q1 = df['height'].quantile(0.25)
+q2 = df['height'].quantile(0.5)
+q3 = df['height'].quantile(0.75)
+iqr = q3-q1
+iqr
 
+```
+![image](https://github.com/user-attachments/assets/0d2ab6c9-60d6-48b2-b595-501a9f1e9a9e)
+
+```
+low = q1 - 1.5*iqr
+low
+```
+![image](https://github.com/user-attachments/assets/88be17ce-6b37-481e-8c26-9c4fc7761df1)
+```
+high = q3 + 1.5*iqr
+high
+```
+![image](https://github.com/user-attachments/assets/28c26dad-d7d1-4eff-a6db-7c997dac06ee)
+```
+df1 = df[((df['height'] >=low)& (df['height']<=high))]
+df1
+```
+![image](https://github.com/user-attachments/assets/03523138-fe73-4062-8b92-ceb873b04732)
 
 
 
